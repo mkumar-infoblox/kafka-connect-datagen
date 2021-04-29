@@ -1,0 +1,18 @@
+{
+  "name": "datagen",
+  "config": {
+    "connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
+    "schema.filename": "/opt/storage_id_sample.avsc",
+    "schema.keyfield": "domain_storage",
+    "kafka.topic": "datagen",
+    "tasks.max": "1",
+    "timezone": "UTC",
+    "locale": "en-US",
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter.schema.registry.url": "http://100.71.200.131:8081",
+    "name": "datagen",
+    "errors.tolerance": "none",
+    "errors.log.enable": "true"
+  }
+}

@@ -1,0 +1,84 @@
+{
+    "name": "storageIdRecord",
+    "type": "record",
+    "fields": [
+        {
+            "name": "domain_storage",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                        "domain@2300005",
+                        "domain@2300010",
+                        "domain@2300012",
+                        "domain@2300015",
+                        "domain@2300017",
+                        "domain@2300020",
+                        "domain@2300030",
+                        "domain@2300106",
+                        "domain@2300107",
+                        "domain@2300123",
+                        "domain@2300141",
+                        "domain@2300154",
+                        "domain@2300174",
+                        "domain@2300184",
+                        "domain@2300187",
+                        "domain@2300188",
+                        "domain@2300196",
+                        "domain@2300199",
+                        "domain@2300201",
+                        "domain@2300207"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "timestamp",
+            "type": {
+                "type": "long",
+                "arg.properties": {
+                    "range":{
+                        "min":1487715775521,
+                        "max":1519273364600
+                    }
+                }
+            }
+        },
+        {
+            "name": "ip_address",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                        "111.152.45.45",
+                        "111.203.236.146",
+                        "111.168.57.122",
+                        "111.249.79.93",
+                        "111.168.57.122",
+                        "111.90.225.227",
+                        "111.173.165.103",
+                        "111.145.8.144",
+                        "111.245.174.248",
+                        "111.245.174.111"
+                    ]
+                }
+            }
+        },
+        {
+            "name": "response_code",
+            "type": {
+                "type": "string",
+                "arg.properties": {
+                    "options": [
+                        "200",
+                        "302",
+                        "404",
+                        "405",
+                        "406",
+                        "407"
+                    ]
+                }
+            }
+        }
+    ]
+}
